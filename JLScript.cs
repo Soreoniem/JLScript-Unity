@@ -14,9 +14,10 @@ using UnityEngine;
 
 namespace JLScript{
 	static public class JL{
-		// Creo recordar que había un problema de precisión de datos si sumaba
-		// un int a un boleano y no hera preciso,
-		// por lo que por precaución uso 2 variables para el random.
+		/* Creo recordar que había un problema de precisión de datos si sumaba
+			un int a un float y no hera preciso,
+			por lo que por precaución uso 2 variables para el random.
+		*/
 		static private int		aleatorioActual_int		= UnityEngine.Random.Range(0, 11);
 		static private float	aleatorioActual_float	= UnityEngine.Random.Range(0f, 11f);
 
