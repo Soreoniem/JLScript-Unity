@@ -1,4 +1,4 @@
-# JLScript-Unity
+# JLScript v3.1.0
 Mis scripts personales de Unity.
 
 Debería empezar por la primera versión pero han sido borradas por ordenadores viejos que se estropearon.
