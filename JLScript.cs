@@ -1287,4 +1287,4 @@ namespace JLScript{
 	Guiones
 		Esperar		: SubTitulo
 		Lentitud	: 60			: (60 / (guiones +1))
- */
+*/
