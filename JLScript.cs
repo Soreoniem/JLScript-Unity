@@ -1,4 +1,4 @@
-﻿// Versión 3.1.0
+﻿// Versión 3.2.0
 /* Info versiones
 	1.0.0	: Enorme modificación que afecta a todo el código.
 	0.1.0	: Modificar, Eliminar o Añadir una función.
@@ -819,6 +819,22 @@ namespace JLScript{
 		}
 
 		/**	<summary>
+				Obtiene la misma cadena pero sin tildes.
+			</summary>
+		
+			<param name="texto">Texto a quitar tildes.</param>
+		
+			<returns>Texto sin tildes.</returns>
+		*/
+		static public string QuitarTildes(string texto){
+			return System.Text.RegularExpressions.Regex.Replace(
+				texto.Normalize(System.Text.NormalizationForm.FormD),
+				@"[^a-zA-z0-9 ]+",
+				""
+			);
+		}
+
+		/**	<summary>
 				Elimina el primer elemento del Array de 1 o 2 Dimensiones
 			</summary>
 
@@ -1170,6 +1186,11 @@ namespace JLScript{
 	*/
 
 /* Datos de Versiones
+►	Versión: 3.2.0
+	• Métodos añadidos
+		· QuitarTildes
+			- Quita las tildes de una frase.
+
 ►	Versión: 3.1.0
 	• Métodos añadidos
 		· Parse
